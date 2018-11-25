@@ -5,3 +5,4 @@ BEGIN
 
     EXECUTE IMMEDIATE v_strSQL;
     p_out_Rows := SQL%ROWCOUNT;
+commit;
