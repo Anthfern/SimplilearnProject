@@ -1,0 +1,7 @@
+BEGIN
+    p_out_Rows := 0;
+
+    v_strSQL := 'UPDATE ix_str_store SET ' || p_Fields || ' WHERE TRIM(Desc10) = ''' || TRIM(p_StoreNumber) || '''';
+
+    EXECUTE IMMEDIATE v_strSQL;
+    p_out_Rows := SQL%ROWCOUNT;
