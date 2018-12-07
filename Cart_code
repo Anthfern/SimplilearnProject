@@ -5,3 +5,5 @@ import c++
 import C
 Export Foxpro
 Export VB++
+Import Pearl
+Import .NET Library
