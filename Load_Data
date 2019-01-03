@@ -17,5 +17,6 @@ AS
   --Invoke the procedure to load data using SQLLDR to table
   PROCEDURE LOAD_DATA;   
   
+  --Need to Write Event Handlers
   
 END CREATE;
