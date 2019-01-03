@@ -1,0 +1,21 @@
+create or replace 
+PACKAGE CREATE
+AS
+  --
+  -- Declare common variables
+   v_Details   VARCHAR2(2000);
+   V_SQLCODE   INTEGER:= 0 ;
+   V_ERR_TEXT  VARCHAR2(200);
+   V_ROWCOUNT  INTEGER   := 0 ;
+   V_PKGNAME   VARCHAR2(30);
+   V_PROCNAME  VARCHAR2(40);
+   V_FULLNAME  VARCHAR2(71);
+   V_PROCESSID NUMBER;
+   V_POSITION  VARCHAR2(100); 
+  -- Declare Constants
+  
+  --Invoke the procedure to load data using SQLLDR to table
+  PROCEDURE LOAD_DATA;   
+  
+  
+END CREATE;
